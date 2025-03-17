@@ -3,12 +3,15 @@
         "./src/**/*"
     ],
     "compilerOptions": {
-        "strict": true,
+        "target": "ESNext",
+        "lib": ["DOM", "DOM.Iterable", "ESNext"],
+        "skipLibCheck": true,
         "esModuleInterop": true,
-        "lib": [
-            "dom",
-            "es2015"
-        ],
+        "strict": true,
+        "module": "ESNext",
+        "moduleResolution": "Node",
+        "isolatedModules": true,
+        "noEmit": true,
         "jsx": "react-jsx"
     }
 }
